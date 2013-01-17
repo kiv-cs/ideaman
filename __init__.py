@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 
-from general import *
+from classes.general import *
 
 from pygame import time
 from pygame import event as pgevent

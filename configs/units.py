@@ -1,7 +1,7 @@
 #
 # This file contains descriptions of units
 # Level description could import units just by name
-# units is enemies, citizens and hero
+# units are enemies, citizens and hero
 #
 # REMEMBER: image path must be the same as for level.py
 
