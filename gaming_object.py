@@ -8,22 +8,22 @@ from pygame import transform
 from pygame import draw
 from pygame import KEYDOWN
 
-from stuff import Animation
+from utilities.animation import Animation
 from random import choice
 from math import sin
 
-from config import *
+from configs.config import *
 
-from a_star import a_star
-from catmull_rom import catmull_rom_trajectory
+from utilities.a_star import a_star
+from utilities.catmull_rom import catmull_rom_trajectory
 
-from utils import coord_to_screen as c2s
-from utils import screen_to_coord as s2c
-from utils import position_to_direction as p2d
-from utils import delta as d
-from utils import coord_to_rect as c2r
-from utils import screen_to_rect as s2r
-from utils import write_log, fix_for_borders
+from utilities.utils import coord_to_screen as c2s
+from utilities.utils import screen_to_coord as s2c
+from utilities.utils import position_to_direction as p2d
+from utilities.utils import delta as d
+from utilities.utils import coord_to_rect as c2r
+from utilities.utils import screen_to_rect as s2r
+from utilities.utils import write_log, fix_for_borders
 
 class Gaming_Object(sprite.Sprite):
 	def __init__(self, description):

@@ -5,7 +5,7 @@
 
 # REMEMBER: image path must be the same as for level.py
 void = {	
-	'image': 			'./images/buildings/border_horisontal.png',
+	'image': 			'./resources/images/buildings/border_horisontal.png',
 	'animation_count': 	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -28,7 +28,7 @@ void = {
 }
 
 border_horisontal = {
-	'image': 			'./images/buildings/border_horisontal.png',
+	'image': 			'./resources/images/buildings/border_horisontal.png',
 	'animation_count': 	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -38,7 +38,7 @@ border_horisontal = {
 }
 
 border_left_up = {
-	'image':			'./images/buildings/border_left_up.png',
+	'image':			'./resources/images/buildings/border_left_up.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -48,7 +48,7 @@ border_left_up = {
 }
 
 border_left_down = {
-	'image':			'./images/buildings/border_left_down.png',
+	'image':			'./resources/images/buildings/border_left_down.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -58,7 +58,7 @@ border_left_down = {
 }
 
 border_right_down = {
-	'image':			'./images/buildings/border_right_down.png',
+	'image':			'./resources/images/buildings/border_right_down.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -68,7 +68,7 @@ border_right_down = {
 }
 
 border_right_up = {
-	'image':			'./images/buildings/border_right_up.png',
+	'image':			'./resources/images/buildings/border_right_up.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -79,7 +79,7 @@ border_right_up = {
 
 
 small_house = {
-	'image':			'./images/buildings/small_house.png',
+	'image':			'./resources/images/buildings/small_house.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -89,7 +89,7 @@ small_house = {
 }
 
 large_house = {
-	'image':			'./images/buildings/large_house.png',
+	'image':			'./resources/images/buildings/large_house.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -103,7 +103,7 @@ large_house = {
 }
 
 large_house_L_style = {
-	'image':			'./images/buildings/large_house_L_style.png',
+	'image':			'./resources/images/buildings/large_house_L_style.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -115,7 +115,7 @@ large_house_L_style = {
 }
 
 blinking_stone = {
-	'image':			'./images/buildings/blinking_stone.png',
+	'image':			'./resources/images/buildings/blinking_stone.png',
 	'animation_count':	1,
 	'frame_count':		3,
 	'closed_cells':		[
@@ -124,7 +124,7 @@ blinking_stone = {
 }
 
 border_3_horisontal = {
-	'image':			'./images/buildings/border_3_horisontal.png',
+	'image':			'./resources/images/buildings/border_3_horisontal.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -133,7 +133,7 @@ border_3_horisontal = {
 }
 
 border_3_vertical = {
-	'image':			'./images/buildings/border_3_vertical.png',
+	'image':			'./resources/images/buildings/border_3_vertical.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[
@@ -144,7 +144,7 @@ border_3_vertical = {
 }
 
 border_3_cross = {
-	'image':			'./images/buildings/border_3_cross.png',
+	'image':			'./resources/images/buildings/border_3_cross.png',
 	'animation_count':	1,
 	'frame_count':		1,
 	'closed_cells':		[

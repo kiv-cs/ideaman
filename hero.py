@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 from gaming_object import *
 from pygame import KEYDOWN, MOUSEBUTTONDOWN
-from config import *
+from configs.config import *
 from pygame import mouse
-from utils import screen_to_coord as s2c
-from utils import mul_tuple, next_point
+from utilities.utils import screen_to_coord as s2c
+from utilities.utils import mul_tuple, next_point
 
 class Hero(Gaming_Object):
 	def __init__(self, description):

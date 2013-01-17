@@ -1,7 +1,7 @@
-from buildings import *
-from units import *
+from configs.buildings import *
+from configs.units import *
 description = {
-	'background':	'./images/level0_0.png',
+	'background':	'./resources/images/level0_0.png',
 	'hero' : 	{
 			'construction': yellow_hero,
 			'position':		(14, 10),

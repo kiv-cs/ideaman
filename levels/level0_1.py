@@ -1,11 +1,11 @@
-from buildings import *
-from units import *
-from config import *
+from configs.buildings import *
+from configs.units import *
+from configs.config import *
 
 LOCATION_PERIMETER = [(0,0), (X_CELL_NUM-1, 0), (X_CELL_NUM-1, Y_CELL_NUM-1), (0,Y_CELL_NUM-1)]
 
 description = {
-	'background':	'./images/level0_0.png',
+	'background':	'./resources/images/level0_0.png',
 	'hero' : 	{
 			'construction': yellow_hero,
 			'position':		(14, 14),

@@ -11,7 +11,7 @@ try:
 except ImportError:
 	android = None
 
-from config import *
+from configs.config import *
 
 
 general = General()

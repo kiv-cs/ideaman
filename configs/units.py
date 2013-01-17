@@ -6,7 +6,7 @@
 # REMEMBER: image path must be the same as for level.py
 
 yellow_hero = {
-		'image':	'./images/units/hero.png',
+		'image':	'./resources/images/units/hero.png',
 		'speed':			5,
 		'animation_count':	9,
 		'frame_count':	3,
@@ -16,7 +16,7 @@ yellow_hero = {
 
 # ============== ENEMIES ======================== #
 blue_enemy = {
-		'image':	'./images/units/ghost_dotted.png',
+		'image':	'./resources/images/units/ghost_dotted.png',
 		'speed':			3,
 		'animation_count':	9,
 		'frame_count':	4,
@@ -29,7 +29,7 @@ blue_enemy = {
 }
 
 red_enemy = {
-		'image':	'./images/units/ghost1.png',
+		'image':	'./resources/images/units/ghost1.png',
 		'speed':			3,
 		'animation_count':	9,
 		'frame_count':	4,
@@ -43,7 +43,7 @@ red_enemy = {
 
 # ================ CITIZENS ======================= #
 green_citizen = {
-		'image':	'./images/units/white_robot.png',
+		'image':	'./resources/images/units/white_robot.png',
 		'speed':			2,
 		'animation_count':	9,
 		'frame_count':	4,

@@ -42,11 +42,12 @@ SMALL_FONT_SIZE = int(X_CELL / 4.)
 # ============== LEVELS ======================= #
 # refact this when will know about modules
 
-import level0_0
-import level0_1
-import level0_2
+import levels
 
-LOCATION = [level0_1.description, level0_0.description, level0_2.description]
+print levels
+print dir(levels)
+
+LOCATION = levels.descriptions
 
 # ============== DIRECTIONS =================== #
 STOP = (0, 0)

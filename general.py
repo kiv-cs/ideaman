@@ -10,7 +10,7 @@ from pygame import QUIT, KEYDOWN, K_ESCAPE
 from pygame import font
 
 
-from config import *
+from configs.config import *
 from location import *
 
 '''

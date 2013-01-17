@@ -9,18 +9,18 @@ from pygame import KEYDOWN, K_SPACE
 from pygame import time, USEREVENT
 
 
-from config import *
+from configs.config import *
 
 from hero import *
 from enemy import *
 from wall import *
 from citizen import *
 
-from utils import coord_to_screen as c2s
-from utils import screen_to_coord as s2c
-from utils import delta as d
-from utils import fix_for_borders
-from utils import next_point, mul_tuple
+from utilities.utils import coord_to_screen as c2s
+from utilities.utils import screen_to_coord as s2c
+from utilities.utils import delta as d
+from utilities.utils import fix_for_borders
+from utilities.utils import next_point, mul_tuple
 
 
 class Location():
@@ -56,7 +56,7 @@ class Location():
 		self.gaming_objects.append(self.hero)
 		self.gaming_objects += self.enemies + self.walls + self.citizens
 
-		self.note_font = font.Font("../fonts/ap.ttf", MEDIUM_FONT_SIZE)
+		self.note_font = font.Font("./resources/fonts/ap.ttf", MEDIUM_FONT_SIZE)
 		# self.notification_text = ''
 
 	def __name__(self):

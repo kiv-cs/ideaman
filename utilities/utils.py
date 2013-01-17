@@ -1,4 +1,4 @@
-from config import *
+from configs.config import *
 
 def coord_to_screen((x, y)):
 	return (x * X_CELL + X_CELL / 2, y * Y_CELL + Y_CELL / 2)

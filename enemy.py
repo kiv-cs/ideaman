@@ -1,11 +1,11 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 from gaming_object import *
-from utils import next_point
-from utils import sum_tuples, mul_tuple, fix_for_borders
-from utils import position_to_direction as p2d
-from utils import is_points_on_line, cell_line
-from config import *
+from utilities.utils import next_point
+from utilities.utils import sum_tuples, mul_tuple, fix_for_borders
+from utilities.utils import position_to_direction as p2d
+from utilities.utils import is_points_on_line, cell_line
+from configs.config import *
 from math import sin, cos, sqrt
 
 
