@@ -28,11 +28,15 @@ class Location():
 		print '%s here' % self.__name__()
 		self.index = index
 		self.window = display.get_surface()
-		self.load(LOCATION[index])
+		# todo: handle this error. 
+		# by now if we have not location with given index, we just load 0 location 
+		try:
+			self.load(LOCATION[index])
+		except IndexError:
+			self.load(LOCATION[0])
+		
 		self.is_debug = False
-
 		self.background = image.load(self.bg_path)
-
 		self.hero = Hero(self.hero_description)
 		self.enemies = [Enemy(description) for description in self.enemies_description]
 		self.enemies_group = sprite.Group()
@@ -51,7 +55,7 @@ class Location():
 
 		self.walls = [Wall(description) for description in self.walls_description]
 
-		# hero first, than enemies, than walls - will draw in this order
+		# hero first, then enemies, then walls - will draw in this order
 		self.gaming_objects = []
 		self.gaming_objects.append(self.hero)
 		self.gaming_objects += self.enemies + self.walls + self.citizens
@@ -70,6 +74,7 @@ class Location():
 		self.walls_description = description['walls']
 		self.__load_matrix()
 
+	# put closed cells as zeroes on level matrix
 	def __load_matrix(self):
 		self.matrix = [[1 for x in range(X_CELL_NUM)] for y in range(Y_CELL_NUM)]
 		self.closed = []
@@ -119,10 +124,7 @@ class Location():
 		# ========================= #
 
 		if not len(self.citizens_group):
-			self.level_done()
-
-		
-
+			self.level_done()	
 
 	def __update_notes(self):
 		speed = 'Speed: %s' % self.hero.speed
@@ -151,7 +153,6 @@ class Location():
 
 		for obj in self.gaming_objects:
 			obj.draw(self.window)
-
 		
 	def level_failed(self):
 		self.__init__(self.index)
@@ -162,8 +163,7 @@ class Location():
 			self.__init__(self.index + 1)
 		except IndexError:
 			print 'WIN'
-
-		
+			# CALL WINNING FUNCTION HERE
 
 	# ==== self.is_debug only ========= #
 	def __draw_grid(self):
@@ -202,7 +202,6 @@ class Location():
 			bl = br[0] - X_CELL, br[1]
 
 			draw.polygon(self.window, color, (tl, tr, br, bl), 1)
-
 
 	def __draw_view_area(self, obj):
 		color = obj.color

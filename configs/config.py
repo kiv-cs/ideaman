@@ -47,6 +47,7 @@ import levels
 print levels
 print dir(levels)
 
+# array with descriptions of levels
 LOCATION = levels.descriptions
 
 # ============== DIRECTIONS =================== #

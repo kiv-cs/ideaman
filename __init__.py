@@ -13,12 +13,15 @@ except ImportError:
 
 from configs.config import *
 
-
 general = General()
 clock = time.Clock()
 
 pause = False
 
+#
+# Main loop of the game.
+# Handle events, update and draw location
+#
 while True:
 
 	if android:

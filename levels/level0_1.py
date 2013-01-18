@@ -12,7 +12,7 @@ description = {
 			'direction': 	(0, 0),
 		},
 	'enemies': [
-
+	
 		{
 			'construction': blue_enemy,
 			'position':		(14, 3),
@@ -78,5 +78,5 @@ description = {
 			},
 
 		]
-		
+
 }
