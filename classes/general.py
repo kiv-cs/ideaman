@@ -13,9 +13,9 @@ from pygame import font
 from configs.config import *
 from location import *
 
-'''
-main class
-'''
+#
+# handle events and change locations
+#
 class General():
 	location_index = 0				# index for location list
 	def __init__(self):

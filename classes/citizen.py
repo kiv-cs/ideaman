@@ -8,8 +8,9 @@ from utilities.utils import is_points_on_line, cell_line
 from configs.config import *
 from math import sin, cos, sqrt
 
-
-
+#
+# Peacful unit class; main goal of the hero
+#
 class Citizen(Gaming_Object):
 	def __init__(self, description):
 		print '%s here' % self.__name__()
@@ -22,16 +23,12 @@ class Citizen(Gaming_Object):
 
 		self.hear_hero = False
 
-
 	def __name__(self):
 		return 'Citizen'
-
-		
 
 	def load(self, description):
 		self.position = description['position']
 		self.direction = description['direction']
-
 
 		self.img_path = description['construction']['image']
 		self.speed = description['construction']['speed']
